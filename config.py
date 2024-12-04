@@ -1,6 +1,6 @@
 import os
 from datetime import timedelta
-
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Base configuration that can be inherited
 class Config:
@@ -8,7 +8,8 @@ class Config:
   SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-very-secret-key-here'
 
   # SQLAlchemy Database Configuration
-  SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///app.db'
+  SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+    'sqlite:///' + os.path.join(basedir, 'app.db')
   SQLALCHEMY_TRACK_MODIFICATIONS = False
 
   # Application Settings

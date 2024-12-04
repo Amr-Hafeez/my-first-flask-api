@@ -11,8 +11,8 @@ def create_app(config_class=Config):
 
   # Initialize extensions
   db.init_app(app)
-  migrate.init_app(app, db)
   babel.init_app(app)
+  migrate.init_app(app, db)
 
   # Register blueprint
   app.register_blueprint(main)
@@ -21,7 +21,7 @@ def create_app(config_class=Config):
   handle_errors(app)
 
   # Create database tables
-  with app.app_context():
-    db.create_all()
+  # with app.app_context():
+  #   db.create_all()
 
   return app
