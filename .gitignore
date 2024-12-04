@@ -3,3 +3,7 @@ env
 .env
 .idea
 instance
+
+__pycache__
+
+app/__pycache__
