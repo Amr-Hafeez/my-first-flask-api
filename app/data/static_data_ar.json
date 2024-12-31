@@ -1,3 +1,10 @@
 {
-  "welcome_message": "أهلا بكم في دليفرك"
+  "welcome_message": "أهلا بكم في دليفرك",
+  "missing_token": "معرّف الجلسة مطلوب",
+  "token_expired": "انتهت صلاحية معرّف الجلسة (التوكن)",
+  "invalid_token": "معرّف الجلسة (التوكن) غير صالح",
+  "field_is_required": "هذا الحقل مطلوب",
+  "field_is_empty": "لا يمكن للحقل أن يكون فارغا",
+  "field_is_invalid": "هذا الحقل غير صالح",
+  "password_validation_failed": "يجب أن تكن كلمة السر 6 أحرف على الأقل"
 }

@@ -1,3 +1,10 @@
 {
-  "welcome_message": "Hello, World"
+  "welcome_message": "Hello, World",
+  "missing_token": "The session identifier (token) is missed",
+  "token_expired": "Token is expired",
+  "invalid_token": "Invalid token",
+  "field_is_required": "This field is required",
+  "field_is_empty": "This field can't be empty",
+  "field_is_invalid": "This field is invalid",
+  "password_validation_failed": "The password field must be at least 6 characters long"
 }
